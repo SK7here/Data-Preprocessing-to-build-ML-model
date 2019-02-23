@@ -1,3 +1,5 @@
+rm(list = ls()) #Clears environment
+
 setwd("C:/College materials/Softwares/R software/Datasets") #Set corresponding dir
 dataset=read.csv("Data.csv",header=T)
 
