@@ -16,7 +16,7 @@ dataset$Purchased=factor(dataset$Purchased,
 #install.packages("caTools") #If caTools package not installed
 library(caTools) 
 
-set.seed(70)
+set.seed(70) #To lock the code
 split=sample.split(dataset$Purchased,SplitRatio=0.8)
 training_set=subset(dataset,split==TRUE)
 test_set=subset(dataset,split==FALSE)
